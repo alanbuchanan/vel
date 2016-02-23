@@ -1,0 +1,176 @@
+$bg-color: #EEEEEE;
+$main-text-color: forestgreen;
+$circle-dimension: 12em;
+$circle-dimension-small: 30px;
+$big-c-dimension: 150px;
+$light-text-color: white;
+$dark-text-color: black;
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,900);
+
+$green-1: #a1dd73;
+$green-2: #37a144;
+$green-3: #199057;
+$green-4: #006f56;
+$green-5: #0c605a;
+
+//* {
+//  border: 1px solid pink;
+//}
+
+body {
+  background-color: $bg-color;
+  color: $dark-text-color;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  height: 100vh;
+}
+
+h1 {
+  font-weight: 900;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 8rem;
+  color: $green-2;
+}
+
+.circle {
+  font-family: 'Playfair Display', serif;
+  color: $light-text-color;
+  top: 0;
+  width: $circle-dimension;
+  height: $circle-dimension;
+  border-radius: 50%;
+  background-color: $main-text-color;
+  text-align: center;
+  //position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transition: all 0.2s ease-in-out;
+  span {
+    background-color: inherit;
+    border-radius: 4px;
+  }
+  &:hover {
+    width: $big-c-dimension + 10px;
+    margin-left: -5px;
+    height: $big-c-dimension + 10px;
+    margin-top: -5px;
+  }
+}
+
+.big-c {
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+  width: $big-c-dimension;
+  height: $big-c-dimension;
+}
+
+#pastels, #digital, #watercolour, #contact, #library, #blog {
+  width: $circle-dimension-small;
+  height: $circle-dimension-small;
+}
+
+#art {
+  top: 20%;
+  left: 20%;
+  background-color: $green-3;
+}
+
+#pastels {
+  top: 30%;
+  left: 15%;
+  background-color: $green-3;
+}
+
+#digital {
+  left: 30%;
+  top: 20%;
+  background-color: $green-3;
+}
+
+#watercolour {
+  top: 35%;
+  left: 30%;
+  background-color: $green-4;
+}
+
+#jewellery {
+  left: 45%;
+  top:30%;
+  background-color: $green-4;
+}
+#writing {
+  left: 70%;
+  top: 20%;
+  background-color: $green-3;
+}
+#about {
+  left: 75%;
+  top: 70%;
+  background-color: $green-5;
+}
+#contact {
+  left: 85%;
+  top: 65%;
+  background-color: $green-5;
+}
+#library {
+  left: 80%;
+  top: 90%;
+  background-color: $green-5;
+}
+
+#photography {
+  left: 10%;
+  top: 60%;
+  background-color: $green-5;
+}
+
+#blog {
+  left: 75%;
+  top: 65%;
+  background-color: $green-4;
+}
+
+img {
+  position: fixed;
+  z-index: -1;
+  height: 400px;
+  bottom: 0;
+  left: 30%;
+}
+
+.circle:hover {
+
+}
+
+@keyframes btn-zoom {
+  0% { width: 150px;}
+  100% { width: 160px;}
+}
+
+@media (max-width: 660px) {
+
+  $circle-dimension: 6em;
+
+  .big-c {
+    font-size: 15px;
+  }
+  .circle {
+    width: $circle-dimension;
+    height: $circle-dimension;
+    margin-top: 3%;
+    margin-left: 2%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}

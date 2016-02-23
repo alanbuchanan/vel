@@ -1,0 +1,9 @@
+body {
+  background-color: #EEEEEE;
+  color: gray; }
+
+.circle {
+  width: 100px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: purple; }

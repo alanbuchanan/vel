@@ -1,0 +1,130 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,900);
+body {
+  background-color: #EEEEEE;
+  color: black;
+  -webkit-font-smoothing: antialiased; }
+
+.container {
+  height: 100vh; }
+
+h1 {
+  font-weight: 900;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 8rem;
+  color: #37a144; }
+
+.circle {
+  font-family: 'Playfair Display', serif;
+  color: white;
+  top: 0;
+  width: 12em;
+  height: 12em;
+  border-radius: 50%;
+  background-color: forestgreen;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transition: all 0.2s ease-in-out; }
+  .circle span {
+    background-color: inherit;
+    border-radius: 4px; }
+  .circle:hover {
+    width: 160px;
+    margin-left: -5px;
+    height: 160px;
+    margin-top: -5px; }
+
+.big-c {
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+  width: 150px;
+  height: 150px; }
+
+#pastels, #digital, #watercolour, #contact, #library, #blog {
+  width: 30px;
+  height: 30px; }
+
+#art {
+  top: 20%;
+  left: 20%;
+  background-color: #199057; }
+
+#pastels {
+  top: 30%;
+  left: 15%;
+  background-color: #199057; }
+
+#digital {
+  left: 30%;
+  top: 20%;
+  background-color: #199057; }
+
+#watercolour {
+  top: 35%;
+  left: 30%;
+  background-color: #006f56; }
+
+#jewellery {
+  left: 45%;
+  top: 30%;
+  background-color: #006f56; }
+
+#writing {
+  left: 70%;
+  top: 20%;
+  background-color: #199057; }
+
+#about {
+  left: 75%;
+  top: 70%;
+  background-color: #0c605a; }
+
+#contact {
+  left: 85%;
+  top: 65%;
+  background-color: #0c605a; }
+
+#library {
+  left: 80%;
+  top: 90%;
+  background-color: #0c605a; }
+
+#photography {
+  left: 10%;
+  top: 60%;
+  background-color: #0c605a; }
+
+#blog {
+  left: 75%;
+  top: 65%;
+  background-color: #006f56; }
+
+img {
+  position: fixed;
+  z-index: -1;
+  height: 400px;
+  bottom: 0;
+  left: 30%; }
+
+@keyframes btn-zoom {
+  0% {
+    width: 150px; }
+  100% {
+    width: 160px; } }
+
+@media (max-width: 660px) {
+  .big-c {
+    font-size: 15px; }
+  .circle {
+    width: 6em;
+    height: 6em;
+    margin-top: 3%;
+    margin-left: 2%; } }
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 970px; } }
